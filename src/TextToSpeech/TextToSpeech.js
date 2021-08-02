@@ -11,7 +11,7 @@ const TextToSpeech = () => {
         value={value}
         onChange={(event) => setValue(event.target.value)}
       />
-      <button onClick={() => speak({ text: value })}>Talky</button>
+      <button onClick={() => speak({ text: value, rate: 0.3, pitch: 0.5 })}>Talky</button>
     </div>
   )
 }
